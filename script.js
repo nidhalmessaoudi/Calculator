@@ -207,5 +207,7 @@ document.addEventListener("keydown", function (i) {
 - Source code can be found at github.com/nidhalmessaoudi/calculator
 - Deployed on Netlify and can be found at: nidhalcalc.netlify.app
 - Developed as JS practice.
-- Modal appears after 6 seconds from 
+- Modal appears after 6 seconds from loading the website.
+- Follow as in github to see more nice open source projects: https://github.com/nidhalmessaoudi
+- To build your next project with us: Click contact us in the model.
 */
