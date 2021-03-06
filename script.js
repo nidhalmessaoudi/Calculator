@@ -176,6 +176,7 @@ document.addEventListener("keydown", function (i) {
 
     } else if (i.key === "c") {
         inputDisplay.value = "";
+        
     } else if (i.key === "+") {
         inputDisplay.value += "+";
 
@@ -208,6 +209,6 @@ document.addEventListener("keydown", function (i) {
 - Deployed on Netlify and can be found at: nidhalcalc.netlify.app
 - Developed as JS practice.
 - Modal appears after 6 seconds from loading the website.
-- Follow as in github to see more nice open source projects: https://github.com/nidhalmessaoudi
-- To build your next project with us: Click contact us in the model.
+- Follow me in github to see more nice open source projects: https://github.com/nidhalmessaoudi
+- To build your next project with me: Click contact us in the model.
 */
