@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #e7e6e1 !important;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 .main {
     padding: 10px;
@@ -24,7 +24,7 @@ body {
     -webkit-transition: 0.4s;
     transition: 0.4s ;
     outline: none;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #23689b;
 }
 .calc-input:focus {
@@ -51,13 +51,13 @@ body {
 .x2 {
     background-color: #a6a6a4;
     color: #686d76;
+    font-weight: bold;
 }
 .equal-operator {
     background-color: #23689b;
     color: white;
     border-radius: 2px !important;
-}
-.clear {
+    font-size: 3rem !important;
     font-weight: bold;
 }
 .model {
@@ -103,4 +103,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     z-index: 5;
+}
+.footer {
+    margin: 20px 0;
+    text-align: center;
 }
