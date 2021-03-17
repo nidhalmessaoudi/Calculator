@@ -344,8 +344,6 @@ document.addEventListener("keydown", function (i) {
 - A simple and nice Calculator developed by Nidhal Messaoudi.
 - Source code can be found at github.com/nidhalmessaoudi/calculator
 - Deployed on Netlify and can be found at: nidhalcalc.netlify.app
-- Developed as JS practice.
-- Modal appears after 6 seconds from loading the website.
 - Follow me in github to see more nice open source projects: https://github.com/nidhalmessaoudi
 - To build your next project with me: Click contact us in the model.
 */
