@@ -53,21 +53,17 @@ const calcOperation = () => {
 setTimeout(function () {
     model.classList.remove("hidden");
     overlay.classList.remove("hidden");
-    body.style.overflowY = "hidden";
 }, 10000);
 
 closeModel.addEventListener("click", function () {
     model.classList.add("hidden");
-    overlay.classList.add("hidden");
-    body.style.overflowY = "scroll";
-});
+    overlay.classList.add("hidden");});
 
 if (model.classList.contains("hidden")) {
     document.addEventListener("keydown", function (i) {
         if (i.key === "Escape") {
             model.classList.add("hidden");
             overlay.classList.add("hidden");
-            body.style.overflowY = "scroll";
         }
     })
 }
@@ -75,7 +71,6 @@ if (model.classList.contains("hidden")) {
 overlay.addEventListener("click", function () {
     model.classList.add("hidden");
     overlay.classList.add("hidden");
-    body.style.overflowY = "scroll";
 });
 
 
@@ -106,6 +101,9 @@ keyContainer.addEventListener("click", function (e) {
 });
 // KEYDOWN EVENTS
 document.addEventListener("keydown", function (i) {
+    if (!i.altKey && !i.ctrlKey && i.shiftKey) {
+        i.preventDefault();
+    }
     if (i.key ===".") printPoint();
     if (i.key === "0") printZero();
     if (i.key === "1") printOne();
@@ -123,11 +121,7 @@ document.addEventListener("keydown", function (i) {
     if (i.key === "*") printTimes();
     if (i.key === "/") printDivide();
     if (i.key === "=" || i.key === "Enter") calcOperation();
-    if (i.key === "Backspace") {
-        i.preventDefault();
-        inputDisplay.value = inputDisplay.value.slice(0, -1);
-    }
-
+    if (i.key === "Backspace") inputDisplay.value = inputDisplay.value.slice(0, -1);
 });
 
 
