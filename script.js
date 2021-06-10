@@ -95,25 +95,65 @@ document.addEventListener("keydown", function (i) {
   if (!i.altKey && !i.ctrlKey && i.shiftKey) {
     i.preventDefault();
   }
-  if (i.key === ".") printPoint();
-  if (i.key === "0") printZero();
-  if (i.key === "1") printOne();
-  if (i.key === "2") printTwo();
-  if (i.key === "3") printThree();
-  if (i.key === "4") printFour();
-  if (i.key === "5") printFive();
-  if (i.key === "6") printSix();
-  if (i.key === "7") printSeven();
-  if (i.key === "8") printEight();
-  if (i.key === "9") printNine();
-  if (i.key === "c") clear();
-  if (i.key === "+") printPlus();
-  if (i.key === "-") printMinus();
-  if (i.key === "*") printTimes();
-  if (i.key === "/") printDivide();
-  if (i.key === "=" || i.key === "Enter") calcOperation();
-  if (i.key === "Backspace")
-    inputDisplay.value = inputDisplay.value.slice(0, -1);
+  switch (i.key) {
+    case ".":
+      printPoint();
+      break;
+    case "0":
+      printZero();
+      break;
+    case "1":
+      printOne();
+      break;
+    case "2":
+      printTwo();
+      break;
+    case "3":
+      printThree();
+      break;
+    case "4":
+      printFour();
+      break;
+    case "5":
+      printFive();
+      break;
+    case "6":
+      printSix();
+      break;
+    case "7":
+      printSeven();
+      break;
+    case "8":
+      printEight();
+      break;
+    case "9":
+      printNine();
+      break;
+    case "c":
+      clear();
+      break;
+    case "+":
+      printPlus();
+      break;
+    case "-":
+      printMinus();
+      break;
+    case "*":
+      printTimes();
+      break;
+    case "/":
+      printDivide();
+      break;
+    case "=":
+      calcOperation();
+      break;
+    case "Enter":
+      calcOperation();
+      break;
+    case "Backspace":
+      inputDisplay.value = inputDisplay.value.slice(0, -1);
+      break;
+  }
 });
 
 /*
